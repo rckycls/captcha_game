@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container .button {
+  background-color: #eee;
+  text-align: center;
+  margin: 5px;
+  border: 1px solid #555;
+  height: 75px;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 500ms;
+}
+
+.container .button:hover {
+  cursor: pointer;
+  background-color: #ddd;
+  transition: background-color 500ms;
+}
+
+.container .button.points {
+  height: 100px;
+  font-size: 30px;
+  color: white;
+  background: rgb(0, 50, 200);
+}
+
+.container .button.errors {
+  height: 100px;
+  font-size: 30px;
+  color: white;
+  background: rgb(200, 50, 0);
+}
+
+
+.container .button.currentCharacter .correctChar {
+  color: green;
+}
+
+.controlsContainer {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.controlsContainer .button {
+  background-color: green;
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+  border: 1px solid #555;
+  height: 75px;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms;
+}
+
+.controlsContainer .button:hover {
+  cursor: pointer;
+  background-color: rgb(129, 255, 129);
+  color: black;
+  transition: all 500ms;
+}
