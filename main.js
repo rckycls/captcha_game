@@ -1,4 +1,4 @@
-var characterArr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890".split("");
+var characterArr = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890".split("");
 var randomKeysArr = [];
 var points = 0;
 var errors = 0;
